@@ -3,10 +3,10 @@ const {title,description,stylos,stylosO} = Astro.props;
 
 ---
 
-<div class ={stylos}>
+<div class ={stylos }>
     <div class={stylosO}>
         <h3 class="font-extralight text-4xl">{title}</h3>
-        <p class="text-gray-500">{description}</p>
+        <p class="text-gray-500 ">{description}</p>
     </div>
     <slot/>
 </div>

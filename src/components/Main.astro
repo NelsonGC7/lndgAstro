@@ -4,10 +4,12 @@ import Figure from "./Figure.astro";
 
 ---
 
-<main class=" custom-fondos flex flex-col  items-center justify-end px-10 z-0">
+<main class=" custom-fondos flex flex-col  items-center justify-end 
+px-10 z-0 lg:justify-center  lg:items-start  lg:px-24
+">
     <Texto 
-        stylos="flex flex-col items-center gap-6"
-        stylosO=" text-center flex flex-col items-center gap-6"
+        stylos="flex flex-col items-center gap-6 lg:w-1/2 lg:items-start lg:text-start"
+        stylosO=" text-center flex flex-col items-center gap-6  lg:items-start lg:text-start"
         title="Next generation digital bank"
         description="Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more."
     >
@@ -42,6 +44,26 @@ import Figure from "./Figure.astro";
         gap: 1.5rem;
         
 
+    }
+    @media(width >= 1024px){
+        .custom-fondos{
+            background: url('/images/image-mockups.png') right no-repeat,
+                    url('/images/bg-intro-desktop.svg') right no-repeat
+                    var(--VeryLightGray);
+            background-size: contain, 75% 100%;
+            background-position: 135% 0,200% 0;
+        }
+        
+    }
+    @media(width >= 1110px){
+        .custom-fondos{
+            background: url('/images/image-mockups.png') right no-repeat,
+                    url('/images/bg-intro-desktop.svg') right no-repeat
+                    var(--VeryLightGray);
+            background-size: contain, 75% 100%;
+            background-position: 114% 0,200% 0;
+        }
+        
     }
 
 
