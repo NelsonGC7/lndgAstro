@@ -1,0 +1,39 @@
+---
+import Texto from "./Texto.astro";
+
+---
+
+<main class="custom-fondos flex flex-col items-center justify-end px-10">
+    <Texto 
+        stylos="customStyles text-center"
+        title="Next generation digital bank"
+        description="Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more."
+    />
+</main>
+
+
+
+<style is:global>
+    .custom-fondos{
+        background: url('/images/image-mockups.png') center no-repeat,
+                    url('/images/bg-intro-mobile.svg') top no-repeat
+                    var(--VeryLightGray);
+        background-size: contain, 100% 62%;
+        background-position: 0 -8rem,top;
+        height: 44rem;
+        width: 100%;
+        margin:  0 auto;
+        padding-bottom: 4rem;
+    }
+    .customStyles{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        
+
+    }
+
+
+</style>

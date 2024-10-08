@@ -1,0 +1,37 @@
+---
+interface Props{
+    title:string,
+}
+const { title } = Astro.props;
+---
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="description" content="Astro description"> 
+        <meta name="viewport"  content="width=device-width">
+        <link rel="icon"  href="/images/favicon-32x32.png">
+        <meta name="generator" content={Astro.generator} >
+        <title>{title}</title>
+    </head>
+    <body class="bg-white h-auto w-full">
+        <slot/>
+    </body>
+</html>
+
+
+<style is:global>
+    :root{ 
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+    }
+    body{
+        background-color: var(--LightGrayishBlue) !important;
+    }
+
+</style>
