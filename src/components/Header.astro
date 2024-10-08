@@ -1,15 +1,64 @@
 ---
----
 
-<header class=" w-full h-14 bg-white mx-auto my-auto px-7 flex items-center justify-between">
+---
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle("navActive")
+        if(nav.classList.contains("navActive")){
+            hamburger.src = "/images/icon-close.svg"
+        }else{
+            hamburger.src = "/images/icon-hamburger.svg"
+        }
+        
+    })
+    
+</script>
+
+<header class="  w-full h-14 bg-white mx-auto my-auto px-7 flex items-center justify-between">
     <figure>
         <img src="/images/logo.svg" alt="">
     </figure>
+    <nav id="nav" class="hidden">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+    </nav>
 
     <figure>
         <img 
         src="/images/icon-hamburger.svg" 
         alt="icon-Hamburger"
-        class="cursor-pointer">
+        class="cursor-pointer"
+        id="hamburger">
     </figure>
 </header>
+<style is:global >
+    header{
+        position: relative;
+        background:white;
+    }
+
+    .navActive{
+        width: 88%;
+        height: 40vh;
+        position: absolute;
+        background-color: white;
+        inset: 0;
+        margin:  auto;
+        border-radius: .5rem;
+        transform: translateY(11.5rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        box-shadow: 1rem 6rem 80px 100px rgba(0, 0, 0, 0.536);
+      
+
+    }
+</style>
+
