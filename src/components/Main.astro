@@ -1,5 +1,6 @@
 ---
 import Texto from "./Texto.astro";
+import Figure from "./Figure.astro";
 
 ---
 
@@ -8,7 +9,14 @@ import Texto from "./Texto.astro";
         stylos="customStyles text-center"
         title="Next generation digital bank"
         description="Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more."
-    />
+    >
+    <Figure>
+        <button 
+            class="bg-slate-500 h-12 w-auto px-4 rounded-3xl
+            customBtn text-white font-semibold">Request invited</button>
+    </Figure>
+    </Texto>
+
 </main>
 
 
@@ -33,6 +41,9 @@ import Texto from "./Texto.astro";
         gap: 1.5rem;
         
 
+    }
+    .customBtn{
+        background:  linear-gradient(to right ,var(--LimeGreen),var(--BrightCyan));
     }
 
 

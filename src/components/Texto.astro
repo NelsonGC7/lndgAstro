@@ -1,21 +1,16 @@
 ---
-const {title,description,stylos} = Astro.props;
-import Figure from "./Figure.astro";
+const {title,description,stylos,stylosO} = Astro.props;
 
 ---
 
 <div class ={stylos}>
-    <h3 class="font-extralight text-4xl">{title}</h3>
-    <p class="text-gray-500">{description}</p>
-    <Figure>
-        <button 
-            class="bg-slate-500 h-12 w-auto px-4 rounded-3xl
-            customBtn text-white font-semibold">Request invited</button>
-    </Figure>
+    <div class={stylosO}>
+        <h3 class="font-extralight text-4xl">{title}</h3>
+        <p class="text-gray-500">{description}</p>
+    </div>
+    <slot/>
 </div>
 
 <style >
-    .customBtn{
-        background:  linear-gradient(to right ,var(--LimeGreen),var(--BrightCyan));
-    }
+   
 </style>

@@ -1,0 +1,45 @@
+.articulo{
+    width: 100%;
+    height: 28.125rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    background-color: white;
+    
+   
+    figure{
+        width: 100%;
+        height: 14.0625rem;
+        background-color: blueviolet;
+    }
+    section{
+        width: 100%;
+        height: 14.0625rem;
+        padding: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+        color: rgb(43, 48, 67);
+
+        
+        flex-direction: column;
+        justify-content: space-around;
+        
+        legend{
+            font-size: .8rem;
+    
+        }
+        h2{
+            font-size: 1.3rem;
+            line-height: 1.5rem;
+            font-weight: 400;
+            
+        }
+        p{
+            font-size: 1rem;
+            line-height: 1.2rem;
+            font-weight: 300;
+        }
+    }
+
+}

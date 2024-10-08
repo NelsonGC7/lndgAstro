@@ -1,6 +1,7 @@
 ---
+const {estilos} = Astro.props
 ---
 
-<section class="w-full h-auto ">
+<section class={"w-full h-auto  " + estilos ? estilos : ''}>
     <slot/>
 </section>
