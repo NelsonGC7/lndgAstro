@@ -1,5 +1,5 @@
 ---
-import Figure from "./Figure.astro"
+import Figure from "./Figure.astro";
 
 ---
 <script>
@@ -19,21 +19,21 @@ import Figure from "./Figure.astro"
 
 <header 
     class="w-full h-14 bg-white mx-auto my-auto 
-    px-7 flex items-center justify-between lg:px-24">
+    px-7 flex items-center justify-between lg:px-24 ">
     <figure>
         <img src="/images/logo.svg" alt="">
     </figure>
-    <nav id="nav" class="hidden lg:flex lg:w-full lg:items-center lg:h-[42px] 
-    lg:text-[.9rem] lg:relative lg:top-[-1px ] lg:justify-center lg:gap-5">
-        <a href="#" class="">Home</a>
+    <nav id="nav" class="hidden lg:flex lg:w-[75%] lg:items-center lg:h-[42px] 
+    lg:text-[.9rem] lg:relative lg:top-[-1px ] lg:gap-4">
+        <a href="#" >Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
         <a href="#">Blog</a>
         <a href="#">Careers</a>
-        <Figure estilos="hidden lg:block">
+        <Figure stilos=" lg:flex-1 lg:w-full lg:flex justify-end" >
             <button 
                 class="bg-slate-500 h-12 w-[11rem] px-4 rounded-3xl
-                customBtn text-white font-bold">Request invited</button>
+                customBtn text-white font-bold  ">Request invited</button>
         </Figure>
     </nav>
 
@@ -66,9 +66,10 @@ import Figure from "./Figure.astro"
         justify-content: space-between;
         padding: 2rem;
         box-shadow: 1rem 6rem 80px 100px rgba(0, 0, 0, 0.536);
-      
-
     }
+   .aver{
+        justify-self: flex-end;
+   }
     
 </style>
 
