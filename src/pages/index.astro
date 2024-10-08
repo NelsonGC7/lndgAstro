@@ -15,7 +15,7 @@ import Foterr from "../components/Foterr.astro";
 	<Main/>
 
 	<Section
-	estilos="flex flex-col items-center  custom-text lg:px-14 py-8"
+	estilos="flex flex-col items-center  custom-text py-8 lg:px-14"
 	>
 		<div class=" w-full h-auto text-center  px-14 py-16 flex flex-col items-center gap-4 lg:text-start lg:items-start">
 			<h4 class="font-extraligth text-4xl text-gray-800">Why chose Easybank?</h4>
@@ -78,10 +78,11 @@ import Foterr from "../components/Foterr.astro";
 
 
 	<Section 
-	estilos=" bg-[var(--VeryLightGray)] px-5 pt-20 pb-24 flex flex-col gap-5"
+	estilos=" bg-[var(--VeryLightGray)] px-5 pt-20 pb-24 flex flex-col gap-5 lg:px-24"
 
-	>	<h6 class="text-center  text-3xl mb-2">Latest Articles</h6>
-		<Articulo
+	>	<h6 class="text-center  text-3xl mb-2 lg:text-start">Latest Articles</h6>
+		<div class=" flex flex-col gap-5 lg:w-full lg:h-auto lg:flex-row ">
+			<Articulo
 			urlimg={"/images/image-currency.jpg"}
 			creador={"By Claire Robinson"}
 			titulo={"Receive money in any currency with no fees"}
@@ -105,6 +106,7 @@ import Foterr from "../components/Foterr.astro";
 			titulo={"Our invite onlu Beta accounts are now live!"}
 			contenido={"After a lot of hard work by the whole team, we're excited to launch out closed beta. It's easy to teques an invite through the site ..."}
 		/>
+		</div>
 
 
 
