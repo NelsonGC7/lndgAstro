@@ -19,17 +19,18 @@ import Figure from "./Figure.astro";
 
 <header 
     class="w-full h-14 bg-white mx-auto my-auto 
-    px-7 flex items-center justify-between lg:px-24 ">
+    px-7 flex items-center justify-between lg:px-24
+    lg:h-24 ">
     <figure>
         <img src="/images/logo.svg" alt="">
     </figure>
     <nav id="nav" class="hidden lg:flex lg:w-[75%] lg:items-center lg:h-[42px] 
-    lg:text-[.9rem] lg:relative lg:top-[-1px ] lg:gap-4">
-        <a href="#" >Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Blog</a>
-        <a href="#">Careers</a>
+    lg:text-[.9rem] lg:relative lg:top-[-1px ] lg:gap-4 lg:text-gray-500 ">
+        <a href="#" class="hover:scale-105 hover:text-black hover:font-bold transition-all duration-300 " >Home</a>
+        <a href="#" class="hover:scale-105 hover:text-black hover:font-bold transition-all duration-300 ">About</a>
+        <a href="#" class="hover:scale-105 hover:text-black hover:font-bold transition-all duration-300 ">Contact</a>
+        <a href="#" class="hover:scale-105 hover:text-black hover:font-bold transition-all duration-300 ">Blog</a>
+        <a href="#" class="hover:scale-105 hover:text-black hover:font-bold transition-all duration-300 ">Careers</a>
         <Figure stilos=" lg:flex-1 lg:w-full lg:flex justify-end" >
             <button 
                 class="bg-slate-500 h-12 w-[11rem] px-4 rounded-3xl
